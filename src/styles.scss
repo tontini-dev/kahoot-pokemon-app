@@ -13,13 +13,16 @@
     font-style: normal;
 }
 
+$font-base: sans-serif;
+$font-title: 'Pokemon Solid', sans-serif;
+
 body {
-    font-family: sans-serif;
+    font-family: $font-base;
     background: linear-gradient(to bottom, #000000, #192c3d);
     min-height: 100vh;
 }
 
 h1, h2 {
-    font-family: 'Pokemon Solid', sans-serif;
+    font-family: $font-title;
     color: #ffb300;
 }
