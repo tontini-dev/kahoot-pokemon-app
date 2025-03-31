@@ -1,14 +1,16 @@
 # Kahoot! Frontend Challenge – Pokémon App
 
-This project is a submission for the Kahoot! Senior Frontend Developer challenge. It is a simple, responsive Pokémon listing app built using **Angular + TypeScript**, following all the challenge requirements.
+This project is a submission for the Kahoot! Senior Frontend Developer challenge. It is a responsive Pokémon listing app built using **Angular + TypeScript**, following all the challenge requirements and going a bit beyond to showcase thoughtful UX and frontend logic.
 
 ## 🔍 Features
 
-- ✅ Lists 10 Pokémons (alphabetically sorted)
-- ✅ Detailed page with at least 3 extra pieces of info (height, weight, types)
-- ✅ Official Pokémon image included
-- ✅ Responsive and styled without any CSS framework (SCSS only)
-- ✅ Built entirely with TypeScript and modern Angular standalone components
+- ✅ Lists 10 Pokémons initially (alphabetically sorted)
+- ✅ Load more Pokémons on demand (pagination-like experience)
+- ✅ Click on any Pokémon to see a detailed view
+- ✅ Detailed view shows image + height, weight, and types
+- ✅ "Back" button for smooth navigation from detail view
+- ✅ Responsive design and styled with **SCSS only** (no CSS frameworks)
+- ✅ Built entirely with TypeScript and **Angular standalone components**
 
 ## 🧑‍💻 Tech Stack
 
@@ -38,13 +40,13 @@ You can test the app live here:
 
 ## 📁 Folder Structure
 
-- `components/`: Contains list, card and detail components
-- `services/`: API integration and model
+- `components/`: Pokémon list, card, and detail views
+- `services/`: API integration and Pokémon model
 - `styles/`: Global SCSS styles
 
 ## 🧠 Author's Note
 
-This app was built with simplicity and clarity in mind, aiming for clean architecture, separation of concerns, and a delightful UI.
+This app was built with simplicity and clarity in mind, using modern Angular concepts such as standalone components, typed APIs, and dynamic rendering. The "Load more" functionality adds a dynamic, real-world feel to the interface.
 
 ---
 

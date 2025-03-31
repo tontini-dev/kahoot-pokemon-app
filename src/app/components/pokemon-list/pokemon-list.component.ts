@@ -14,18 +14,40 @@ import { NgIf, NgFor, TitleCasePipe } from '@angular/common';
 export class PokemonListComponent implements OnInit {
   pokemons: Pokemon[] = [];
   loading = true;
+  loadingMore = false;
+  limit = 10;
 
   constructor(private pokemonService: PokemonService, private router: Router) {}
 
   ngOnInit(): void {
-    this.pokemonService.getPokemons(10).subscribe({
+    this.loadPokemons();
+  }
+
+  loadPokemons(): void {
+    this.loading = true;
+    this.pokemonService.getPokemons(this.limit).subscribe({
       next: (data) => {
         this.pokemons = data;
         this.loading = false;
       },
       error: (err) => {
-        console.error('Erro ao carregar Pokémons:', err);
+        console.error('Error loading Pokémons:', err);
         this.loading = false;
+      }
+    });
+  }
+
+  loadMore(): void {
+    this.loadingMore = true;
+    this.limit += 10;
+    this.pokemonService.getPokemons(this.limit).subscribe({
+      next: (data) => {
+        this.pokemons = data;
+        this.loadingMore = false;
+      },
+      error: (err) => {
+        console.error('Error loading more Pokémons:', err);
+        this.loadingMore = false;
       }
     });
   }

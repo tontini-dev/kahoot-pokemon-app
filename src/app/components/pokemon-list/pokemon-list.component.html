@@ -1,5 +1,6 @@
 <div class="list-container">
     <h1>Pokémon List</h1>
+    <p class="subtitle">Click a Pokémon to view its details</p>
   
     <div *ngIf="loading">Loading...</div>
   
@@ -13,4 +14,7 @@
         <h2>{{ pokemon.name | titlecase }}</h2>
       </div>
     </div>
+    <button (click)="loadMore()" class="load-more" [disabled]="loadingMore">
+        {{ loadingMore ? 'Loading...' : 'Load more' }}
+    </button>
 </div>

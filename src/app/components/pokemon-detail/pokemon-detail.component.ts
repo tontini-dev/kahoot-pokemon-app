@@ -3,6 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { PokemonService } from '../../services/pokemon.service';
 import { Pokemon } from '../../services/pokemon.model';
 import { NgIf, NgFor, TitleCasePipe } from '@angular/common';
+import { Location } from '@angular/common';
+
 
 @Component({
   selector: 'app-pokemon-detail',
@@ -17,8 +19,13 @@ export class PokemonDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private pokemonService: PokemonService
+    private pokemonService: PokemonService,
+    private location: Location
   ) {}
+
+  goBack(): void {
+    this.location.back();
+  }
 
   ngOnInit(): void {
     const name = this.route.snapshot.paramMap.get('name');

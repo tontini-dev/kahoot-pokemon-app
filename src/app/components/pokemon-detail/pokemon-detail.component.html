@@ -1,4 +1,5 @@
 <div class="detail-container" *ngIf="pokemon">
+    <button (click)="goBack()" class="back-button">← Back</button>
     <h1>{{ pokemon.name | titlecase }}</h1>
     <img [src]="pokemon.image" [alt]="pokemon.name" />
   
