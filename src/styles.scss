@@ -15,4 +15,11 @@
 
 body {
     font-family: sans-serif;
+    background: linear-gradient(to bottom, #000000, #192c3d);
+    min-height: 100vh;
+}
+
+h1, h2 {
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #ffb300;
 }
