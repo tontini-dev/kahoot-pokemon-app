@@ -10,7 +10,7 @@
         <li *ngFor="let type of pokemon.types">{{ type }}</li>
       </ul>
     </div>
+    <button (click)="goBack()" class="back-button">← Back</button>
 </div>
-<button (click)="goBack()" class="back-button">← Back</button>
 
 <div *ngIf="loading">Loading...</div>
