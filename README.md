@@ -31,10 +31,10 @@ ng serve
 
 Then open [http://localhost:4200](http://localhost:4200) in your browser.
 
-## 🌐 Live Demo (Optional)
+## 🌐 Live Demo
 
 You can test the app live here:  
-👉 [https://your-app-name.netlify.app](https://your-app-name.netlify.app)
+👉 [https://glittery-dasik-940f53.netlify.app](https://glittery-dasik-940f53.netlify.app)
 
 ## 📁 Folder Structure
 
