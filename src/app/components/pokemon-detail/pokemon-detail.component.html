@@ -1,0 +1,15 @@
+<div class="detail-container" *ngIf="pokemon">
+    <h1>{{ pokemon.name | titlecase }}</h1>
+    <img [src]="pokemon.image" [alt]="pokemon.name" />
+  
+    <div class="info">
+      <p><strong>Height:</strong> {{ pokemon.height }}</p>
+      <p><strong>Weight:</strong> {{ pokemon.weight }}</p>
+      <p><strong>Types:</strong></p>
+      <ul>
+        <li *ngFor="let type of pokemon.types">{{ type }}</li>
+      </ul>
+    </div>
+</div>
+  
+<div *ngIf="loading">Loading...</div>

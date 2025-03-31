@@ -1,0 +1,25 @@
+.detail-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+  
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      margin: 1rem 0;
+    }
+  
+    .info {
+      text-align: left;
+      margin-top: 1rem;
+  
+      p {
+        margin: 0.5rem 0;
+      }
+  
+      ul {
+        padding-left: 1.5rem;
+      }
+    }
+}
